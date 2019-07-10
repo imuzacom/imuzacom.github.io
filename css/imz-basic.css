@@ -807,27 +807,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
     opacity: .85;
 }
 /* フッタ bottom-editarea */
-#bottom-editarea {
-    background: #f5f5f5;
-    padding-top: 50px;
-}
-#bottom-editarea .hatena-module {
-    font-size: 1em;
-}
-#bottom-editarea .hatena-urllist li {
-    padding: 0;
-}
-#bottom-editarea .hatena-urllist li a {
-    color: #454545;
-    padding: .3em 0;
-}
-#bottom-editarea .hatena-urllist li [class*=blogicon-] {
-    margin-right: .3em;
-}
-#bottom-editarea .blogicon-link {
-    -webkit-transform: rotate(-30deg);
-            transform: rotate(-30deg);
-}
 /* Profile module */
 .hatena-module-profile .profile-icon {
     float: left;
