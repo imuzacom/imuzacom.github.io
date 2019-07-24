@@ -1000,7 +1000,8 @@ body.offcanvas {
     right: -375px;
     top: 0;
     padding: 100px 20px 50px;
-    width: 375px;
+    max-width: 375px;
+    width: 100vw;
     background: #fff;
     -webkit-transition: right 500ms;
     transition: right 500ms;
@@ -1065,6 +1066,7 @@ body.offcanvas {
         display: flex;
         width: auto;
         height: auto;
+        max-width: initial;
         right: 0;
         padding: 0;
         overflow: inherit;
