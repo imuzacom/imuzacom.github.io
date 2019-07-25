@@ -2196,10 +2196,29 @@ body.offcanvas {
 	position: relative;
 	height: 200px;
 }
+#content-inner {
+    margin-top: 100px;
+}
 
 #blog-title #title a {
 	color: #fff;
 	-moz-text-shadow: 0 0 20px #000;
 	-webkit-text-shadow: 0 0 20px #000;
 	text-shadow: 0 0 20px #000;
+}
+.page-archive:not(.page-index) #content-inner {
+    margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+    .notouch. #blog-title-inner .imzMenu {
+        background: transparent;
+    }
+    .notouch #blog-title-inner .imzMenu .hatena-module {
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 3px;
+    }
+    #blog-title-inner {
+        background-size: cover;
+    }
 }
