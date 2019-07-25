@@ -2190,9 +2190,22 @@ body.offcanvas {
 	background-size: cover;
 	background-position: center;
 }
-
 #blog-title #blog-title-inner {
 	background-repeat: no-repeat;
 	position: relative;
 	height: 200px;
 }
+#blog-title #title a {
+    color: #fff;
+    -moz-text-shadow: 0 0 20px #000;
+    -webkit-text-shadow: 0 0 20px #000;
+    text-shadow: 0 0 20px #000;
+}
+#blog-title #blog-description {
+    font-weight: 700;
+    color: #fff;
+    -moz-text-shadow: 0 0 10px #000;
+    -webkit-text-shadow: 0 0 10px #000;
+    text-shadow: 0 0 10px #000;
+}
+
