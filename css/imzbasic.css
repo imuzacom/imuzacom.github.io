@@ -2209,3 +2209,7 @@ body.offcanvas {
     text-shadow: 0 0 10px #000;
 }
 
+#box2-inner .hatena-module:first-child {
+    display: none;
+}
+
