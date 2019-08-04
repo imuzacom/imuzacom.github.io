@@ -423,22 +423,34 @@ body:not(.page-index) {
     height: 180px;
     border-radius: 50%;
     display: block;
+    overflow: hidden;
+    background-position: center;
+    background-size: 100%;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+.pickup-link:hover {
+    background-size: 120%;
 }
 .pickup1 .pickup-link {
-    background: url(https://cdn.blog.st-hatena.com/images/common/logo-icon.svg?version=c570949326e4e1ec6f258179bb9985ce829d4d0c&env=production);
-    background-size: cover;
+    background-image: url(https://cdn.blog.st-hatena.com/images/common/logo-icon.svg?version=c570949326e4e1ec6f258179bb9985ce829d4d0c&env=production);
 }
 .pickup2 .pickup-link {
-    background: url(https://cdn.blog.st-hatena.com/images/common/logo-icon.svg?version=c570949326e4e1ec6f258179bb9985ce829d4d0c&env=production);
-    background-size: cover;
+    background-image: url(https://cdn.blog.st-hatena.com/images/common/logo-icon.svg?version=c570949326e4e1ec6f258179bb9985ce829d4d0c&env=production);
 }
 .pickup3 .pickup-link {
-    background: url(https://cdn.blog.st-hatena.com/images/common/logo-icon.svg?version=c570949326e4e1ec6f258179bb9985ce829d4d0c&env=production);
-    background-size: cover;
+    background-image: url(https://cdn.blog.st-hatena.com/images/common/logo-icon.svg?version=c570949326e4e1ec6f258179bb9985ce829d4d0c&env=production);
 }
 .pickup-heading {
     font-family: 'Noto Serif JP', serif;
     margin-top: 20px;
+}
+.pickup-heading a {
+    color: #454545;
+    text-decoration: none;
+}
+.pickup-heading a:hover {
+    color: #1487bd;
 }
 .pickup-lead {
     font-family: 'Noto Serif JP', serif;
@@ -630,13 +642,19 @@ body:not(.page-index) {
         -ms-flex-order: 1;
             order: 1;
 }
+.page-index.page-archive .entry-thumb-link:hover .entry-thumb {
+    background-size: 120%;
+}
 .page-index.page-archive .entry-thumb {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
+    background-size: 100%;
+    background-position: center;
+    -webkit-transition: all .3s;
+    transition: all .3s;
 }
 .page-index.page-archive .archive-entry-body {
     display: none;
