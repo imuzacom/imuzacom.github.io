@@ -828,7 +828,7 @@ img.hatena-fotolife {
 }
 /* 記事ページのみ */
 .page-entry .breadcrumb {
-    margin: 0;
+    margin-bottom: 0;
 }
 .page-entry .entry-title-link {
     pointer-events: none;
