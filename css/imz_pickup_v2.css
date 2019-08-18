@@ -345,11 +345,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 img.hatena-fotolife {
     pointer-events: none;
 }
-/* Web Font */
-@font-face {
-    font-family: "tokoteku";
-    src: url("https://ausnichts.github.io/tokoteku/tokoteku.eot"), url("https://ausnichts.github.io/tokoteku/tokoteku.woff");
-}
 /* ヘッダ（グローバルヘッダ）
   グローバルヘッダの中はiframeですが、
   #globalheader-container に背景色や文字色を指定することでiframeの中にも色が反映されます。
@@ -404,7 +399,6 @@ img.hatena-fotolife {
 #title {
     margin: 0;
     font-size: 2.4rem;
-    font-family: "tokoteku";
 }
 #title a {
     color: #454545;
