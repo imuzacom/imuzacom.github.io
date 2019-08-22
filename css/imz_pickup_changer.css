@@ -700,24 +700,23 @@ body:not(.page-index) {
     margin: 1em 0 0.8em 0;
 }
 .entry-content h1 {
-    font-size: 1.5rem;
+    font-size: 3rem;
 }
 .entry-content h2 {
-    font-size: 1.4rem;
+    font-size: 2.6rem;
 }
 .entry-content h3 {
-    font-size: 1.2rem;
+    font-size: 2.4rem;
 }
 .entry-content h4 {
-    font-size: 1.1rem;
+    font-size: 1.8rem;
 }
 .entry-content h5 {
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 .entry-content h6 {
-    font-size: .9rem;
-}
-.entry-content ul,
+    font-size: 1.4rem;
+}.entry-content ul,
 .entry-content ol,
 .entry-content dd {
     margin: 0 0 1em 1.5em;
