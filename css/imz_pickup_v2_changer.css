@@ -1355,7 +1355,7 @@ body.offcanvas {
         display: flex;
         width: auto;
         height: auto;
-        max-width: initial;
+        max-width: inherit;
         right: 0;
         padding: 0;
         overflow: inherit;
