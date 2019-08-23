@@ -653,7 +653,7 @@ img.hatena-fotolife {
     margin-right: 5px;
 }
 .hatena-urllist .urllist-category-link {
-    font-size: .7rem;
+    font-size: 1.1rem;
     padding: .1em .3em;
 }
 .hatena-urllist .urllist-date-link a {
@@ -887,7 +887,7 @@ img.hatena-fotolife {
     width: 100%;
     overflow: auto;
     display: block;
-    font-size: .8rem;
+    font-size: 1.6rem;
 }
 .entry-content table th,
 .entry-content table td {
@@ -919,7 +919,7 @@ img.hatena-fotolife {
     text-overflow: ellipsis;
     font-size: 100%;
     line-height: 1.3;
-    font-size: .8rem;
+    font-size: 1.4rem;
     padding: 10px;
 }
 .entry-content pre > code {
@@ -958,7 +958,7 @@ img.hatena-fotolife {
 }
 .entry-footer-section {
     color: #999;
-    font-size: .9rem;
+    font-size: 1.4rem;
 }
 .entry-footer-section a {
     color: #999;
@@ -972,7 +972,7 @@ img.hatena-fotolife {
     margin: 0 0 15px 0;
     padding: 0;
     line-height: 1.7;
-    font-size: .85rem;
+    font-size: 1.4rem;
 }
 .comment-box .entry-comment {
     padding: 10px 0 10px 60px;
@@ -1001,7 +1001,7 @@ img.hatena-fotolife {
     margin: 0 0 .4em 0;
     word-wrap: break-word;
     color: #454545;
-    font-size: .85rem;
+    font-size: 1.4rem;
 }
 .comment-content p {
     margin: 0 0 .6em 0;
@@ -1009,14 +1009,14 @@ img.hatena-fotolife {
 .comment-metadata {
     color: #999;
     margin: 0;
-    font-size: .8rem;
+    font-size: 1.2rem;
 }
 .comment-metadata a {
     color: #999;
 }
 .leave-comment-title {
     padding: .6em 1em;
-    font-size: .85rem;
+    font-size: 1.4rem;
     border: 1px solid #ddd;
 }
 /* Pager */
@@ -1173,7 +1173,7 @@ img.hatena-fotolife {
     margin-top: 2em;
     padding-bottom: 2rem;
     text-align: center;
-    font-size: .8rem;
+    font-size: 1.2rem;
     color: #999;
 }
 #footer a {
@@ -2168,6 +2168,41 @@ body.offcanvas {
     .socials .line .txt {
         font-size: 1.6vw;
     }
+}
+/* お問い合わせフォーム */
+#formWrapper * {
+    display: block;
+}
+#formWrapper input[type=text],
+#formWrapper input[type=email],
+#formWrapper textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0.3em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+#formWrapper textarea {
+    height: 200px;
+}
+#formWrapper input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    border-width: 1px;
+    border-color: darkgray;
+}
+#formWrapper input[type="submit"] {
+    background: #BFCBE1;
+    padding: 5px 30px;
+    color: #fff;
+    border-radius: 100px;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+    border: none;
+}
+#formWrapper input[type="submit"]:hover {
+    background: #5776b0;
 }
 /* Web Font */
 @font-face {
