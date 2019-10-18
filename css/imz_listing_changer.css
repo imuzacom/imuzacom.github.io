@@ -2305,51 +2305,51 @@ body.offcanvas {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 20px 2vw;
     }
-    #bottom-editarea-inner .archive-entry:nth-child(1) {
+    #bottom-editarea-inner .hatena-module:nth-child(1) {
         -ms-grid-row: 1;
         -ms-grid-column: 1;
     }
-    #bottom-editarea-inner .archive-entry:nth-child(2) {
+    #bottom-editarea-inner .hatena-module:nth-child(2) {
         -ms-grid-row: 1;
         -ms-grid-column: 3;
     }
-    #bottom-editarea-inner .archive-entry:nth-child(3) {
+    #bottom-editarea-inner .hatena-module:nth-child(3) {
         -ms-grid-row: 3;
         -ms-grid-column: 1;
     }
-    #bottom-editarea-inner .archive-entry:nth-child(4) {
+    #bottom-editarea-inner .hatena-module:nth-child(4) {
         -ms-grid-row: 3;
         -ms-grid-column: 3;
     }
-    #bottom-editarea-inner .archive-entry:nth-child(5) {
+    #bottom-editarea-inner .hatena-module:nth-child(5) {
         -ms-grid-row: 5;
         -ms-grid-column: 1;
     }
-    #bottom-editarea-inner .archive-entry:nth-child(6) {
+    #bottom-editarea-inner .hatena-module:nth-child(6) {
         -ms-grid-row: 5;
         -ms-grid-column: 3;
     }
-    #bottom-editarea-inner .archive-entry:nth-child(7) {
+    #bottom-editarea-inner .hatena-module:nth-child(7) {
         -ms-grid-row: 7;
         -ms-grid-column: 1;
     }
-    #bottom-editarea-inner .archive-entry:nth-child(8) {
+    #bottom-editarea-inner .hatena-module:nth-child(8) {
         -ms-grid-row: 7;
         -ms-grid-column: 3;
     }
-    #bottom-editarea-inner .archive-entry:nth-child(9) {
+    #bottom-editarea-inner .hatena-module:nth-child(9) {
         -ms-grid-row: 9;
         -ms-grid-column: 1;
     }
-    #bottom-editarea-inner .archive-entry:nth-child(10) {
+    #bottom-editarea-inner .hatena-module:nth-child(10) {
         -ms-grid-row: 9;
         -ms-grid-column: 3;
     }
-    #bottom-editarea-inner .archive-entry:nth-child(11) {
+    #bottom-editarea-inner .hatena-module:nth-child(11) {
         -ms-grid-row: 11;
         -ms-grid-column: 1;
     }
-    #bottom-editarea-inner .archive-entry:nth-child(12) {
+    #bottom-editarea-inner .hatena-module:nth-child(12) {
         -ms-grid-row: 11;
         -ms-grid-column: 3;
     }
