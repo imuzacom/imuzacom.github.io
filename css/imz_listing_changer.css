@@ -941,6 +941,7 @@ body:not(.page-index) .urllist-item-inner {
             align-items: start;
 }
 body:not(.page-index) .urllist-image-link {
+    display: block;
     -ms-grid-column: 1;
     grid-column: 1;
     -ms-grid-row: 2;
@@ -954,6 +955,7 @@ body:not(.page-index) .urllist-date-link {
     grid-row: 1;
 }
 body:not(.page-index) .urllist-title-link {
+    display: block;
     -ms-grid-column: 3;
     grid-column: 3;
     -ms-grid-row: 2;
