@@ -1426,7 +1426,7 @@ body:not(.page-index) .urllist-entry-body {
     margin-top: -2rem;
     margin-left: 7em;
 }
-.page-index .urllist-item-inner .urllist-title-body {
+.page-index .urllist-item-inner .urllist-entry-body {
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
             order: 5;
