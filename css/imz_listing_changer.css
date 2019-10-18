@@ -1292,21 +1292,21 @@ body:not(.page-index) .urllist-entry-body {
 /* アーカイブのヘッダコンテナ */
 /* アーカイブのヘッダコンテナ */
 .archive-entry {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: auto auto 1fr;
-        grid-template-rows: auto auto 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     /* 一覧の画像 */
     /* 一覧のタイトル */
     /* 一覧の本文 */
 }
 .archive-entry .entry-thumb-link {
-    -ms-grid-column: 1;
-    grid-column: 1;
-    -ms-grid-row: 1;
-    grid-row: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     position: relative;
     padding-top: 56.25%;
     display: block;
@@ -1326,10 +1326,10 @@ body:not(.page-index) .urllist-entry-body {
     background-size: 120%;
 }
 .archive-entry .archive-entry-header {
-    -ms-grid-column: 1;
-    grid-column: 1;
-    -ms-grid-row: 2;
-    grid-row: 2;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-top: -2rem;
 }
 .archive-entry .entry-title-link {
     font-family: 'Noto Serif JP', serif;
@@ -1348,17 +1348,15 @@ body:not(.page-index) .urllist-entry-body {
     font-size: .6em;
 }
 .archive-entry .categories {
-    -ms-grid-column: 1;
-    grid-column: 1;
-    -ms-grid-row: 2;
-    grid-row: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
     margin-left: 7em;
 }
 .archive-entry .archive-entry-body {
-    -ms-grid-column: 1;
-    grid-column: 1;
-    -ms-grid-row: 3;
-    grid-row: 3;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
 }
 .page-index .urllist-item-inner {
     display: -ms-grid;
