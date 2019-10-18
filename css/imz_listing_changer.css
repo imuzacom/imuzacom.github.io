@@ -1668,6 +1668,7 @@ body.offcanvas {
     border: 1px solid #ddd;
     border-radius: 3px;
     width: 100%;
+    min-width: 300px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: -webkit-box;
