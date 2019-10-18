@@ -12,7 +12,7 @@
     このテーマをもとにしたデザインテーマの配布も自由です。
   Released under the MIT License.
 */
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -30,12 +30,6 @@ html {
  */
 body {
   margin: 0;
-}
-/**
- * Render the `main` element consistently in IE.
- */
-main {
-  display: block;
 }
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -551,9 +545,9 @@ img.hatena-fotolife {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto 1fr;
-    grid-template-columns: auto 1fr;
+        grid-template-columns: auto 1fr;
     -ms-grid-rows: auto 1fr;
-    grid-template-rows: auto 1fr;
+        grid-template-rows: auto 1fr;
     height: 56.25vw;
     max-height: 250px;
     /* 「編集する」ボタン */
@@ -580,7 +574,8 @@ img.hatena-fotolife {
     grid-column: 1 / 3;
     -ms-grid-row: 2;
     grid-row: 2;
-    -ms-grid-row-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
         align-self: center;
 }
 .entry-header .entry-title-link {
@@ -809,12 +804,13 @@ img.hatena-fotolife {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 49% 2% 49%;
-    grid-template-columns: 49% 2% 49%;
+        grid-template-columns: 49% 2% 49%;
     -ms-grid-rows: auto;
-    grid-template-rows: auto;
+        grid-template-rows: auto;
 }
 .pager-prev,
 .pager-next {
+    display: block;
     font-size: 1.2rem;
     width: 100%;
 }
@@ -937,9 +933,9 @@ body:not(.page-index) .urllist-item-inner {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto 2% 1fr;
-    grid-template-columns: auto 2% 1fr;
+        grid-template-columns: auto 2% 1fr;
     -ms-grid-rows: auto auto;
-    grid-template-rows: auto auto;
+        grid-template-rows: auto auto;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
@@ -1204,9 +1200,9 @@ body:not(.page-index) .urllist-entry-body {
 }
 .portrait .listingNavi {
     -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     -ms-grid-rows: 7vh (calc((86vh - 60px) / 3.5))[3] 1fr 7vh;
-    grid-template-rows: 7vh repeat(3, calc((86vh - 60px) / 3.5)) 1fr 7vh;
+        grid-template-rows: 7vh repeat(3, calc((86vh - 60px) / 3.5)) 1fr 7vh;
 }
 .portrait .listingNavi li:nth-child(1) {
     -ms-grid-row: 2;
@@ -1245,9 +1241,9 @@ body:not(.page-index) .urllist-entry-body {
 }
 .landscape .listingNavi {
     -ms-grid-columns: 50% 50%;
-    grid-template-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
     -ms-grid-rows: 5vh (calc((90vh - 60px) / 2))[2] 5vh;
-    grid-template-rows: 5vh repeat(2, calc((90vh - 60px) / 2)) 5vh;
+        grid-template-rows: 5vh repeat(2, calc((90vh - 60px) / 2)) 5vh;
 }
 .landscape .listingNavi li:nth-child(1) {
     -ms-grid-row: 2;
@@ -1256,7 +1252,8 @@ body:not(.page-index) .urllist-entry-body {
     grid-column: 1;
     -ms-grid-column-align: right;
         justify-self: right;
-    -ms-grid-row-align: end;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
         align-self: end;
 }
 .landscape .listingNavi li:nth-child(2) {
@@ -1264,7 +1261,8 @@ body:not(.page-index) .urllist-entry-body {
     grid-row: 2;
     -ms-grid-column: 2;
     grid-column: 2;
-    -ms-grid-row-align: end;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
         align-self: end;
 }
 .landscape .listingNavi li:nth-child(3) {
@@ -1292,9 +1290,9 @@ body:not(.page-index) .urllist-entry-body {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     -ms-grid-rows: auto auto 1fr;
-    grid-template-rows: auto auto 1fr;
+        grid-template-rows: auto auto 1fr;
     /* 一覧の画像 */
     /* 一覧のタイトル */
     /* 一覧の本文 */
@@ -1306,6 +1304,7 @@ body:not(.page-index) .urllist-entry-body {
     grid-row: 1;
     position: relative;
     padding-top: 56.25%;
+    display: block;
 }
 .archive-entry .entry-thumb-link .entry-thumb {
     position: absolute;
@@ -1360,9 +1359,9 @@ body:not(.page-index) .urllist-entry-body {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     -ms-grid-rows: auto auto 1fr;
-    grid-template-rows: auto auto 1fr;
+        grid-template-rows: auto auto 1fr;
     /* 一覧の画像 */
     /* 一覧のタイトル */
     /* 一覧の本文 */
@@ -2073,9 +2072,9 @@ body.offcanvas {
         display: -ms-grid;
         display: grid;
         -ms-grid-rows: auto auto;
-        grid-template-rows: auto auto;
+            grid-template-rows: auto auto;
         -ms-grid-columns: (1fr)[18];
-        grid-template-columns: repeat(18, 1fr);
+            grid-template-columns: repeat(18, 1fr);
     }
     #wrapper {
         -ms-grid-column: 1;
@@ -2228,7 +2227,7 @@ body.offcanvas {
     /* 記事ページヘッダ */
     .entry-header {
         -ms-grid-rows: 100px 1fr;
-        grid-template-rows: 100px 1fr;
+            grid-template-rows: 100px 1fr;
         max-height: none;
         height: 300px;
     }
@@ -2239,7 +2238,8 @@ body.offcanvas {
     .entry-header .entry-title {
         -ms-grid-row: 2;
         grid-row: 2;
-        -ms-grid-row-align: start;
+        -ms-flex-item-align: start;
+            -ms-grid-row-align: start;
             align-self: start;
         margin: 0;
     }
@@ -2256,9 +2256,9 @@ body.offcanvas {
     /*************** アーカイブページ *****************/
     .page-archive:not(.page-index) .archive-entry {
         -ms-grid-columns: 40% 2% 58%;
-        grid-template-columns: 40% 2% 58%;
+            grid-template-columns: 40% 2% 58%;
         -ms-grid-rows: auto auto 1fr;
-        grid-template-rows: auto auto 1fr;
+            grid-template-rows: auto auto 1fr;
     }
     .page-archive:not(.page-index) .archive-entry-header {
         -ms-grid-column: 3;
@@ -2284,7 +2284,8 @@ body.offcanvas {
         -ms-grid-row: 1;
         -ms-grid-row-span: 3;
         grid-row: 1 / 4;
-        -ms-grid-row-align: start;
+        -ms-flex-item-align: start;
+            -ms-grid-row-align: start;
             align-self: start;
     }
     .page-archive:not(.page-index) .archive-entry-body {
@@ -2368,6 +2369,164 @@ body.offcanvas {
         display: block;
     }
 }
+@media (min-width: 1037px) {
+    .page-index.page-archive .archive-entries,
+    .page-index.page-archive .recent-entries {
+        -ms-grid-rows: auto 20px auto 20px auto 20px auto ;
+        -ms-grid-columns: 1fr 2vw 1fr 2vw 1fr ;
+    }
+    .page-index.page-archive .archive-entries .archive-entry:nth-child(1),
+    .page-index.page-archive .recent-entries .archive-entry:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    .page-index.page-archive .archive-entries .archive-entry:nth-child(2),
+    .page-index.page-archive .recent-entries .archive-entry:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+    .page-index.page-archive .archive-entries .archive-entry:nth-child(3),
+    .page-index.page-archive .recent-entries .archive-entry:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 5;
+    }
+    .page-index.page-archive .archive-entries .archive-entry:nth-child(4),
+    .page-index.page-archive .recent-entries .archive-entry:nth-child(4) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+    .page-index.page-archive .archive-entries .archive-entry:nth-child(5),
+    .page-index.page-archive .recent-entries .archive-entry:nth-child(5) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+    .page-index.page-archive .archive-entries .archive-entry:nth-child(6),
+    .page-index.page-archive .recent-entries .archive-entry:nth-child(6) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 5;
+    }
+    .page-index.page-archive .archive-entries .archive-entry:nth-child(7),
+    .page-index.page-archive .recent-entries .archive-entry:nth-child(7) {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+    }
+    .page-index.page-archive .archive-entries .archive-entry:nth-child(8),
+    .page-index.page-archive .recent-entries .archive-entry:nth-child(8) {
+        -ms-grid-row: 5;
+        -ms-grid-column: 3;
+    }
+    .page-index.page-archive .archive-entries .archive-entry:nth-child(9),
+    .page-index.page-archive .recent-entries .archive-entry:nth-child(9) {
+        -ms-grid-row: 5;
+        -ms-grid-column: 5;
+    }
+    .page-index.page-archive .archive-entries .archive-entry:nth-child(10),
+    .page-index.page-archive .recent-entries .archive-entry:nth-child(10) {
+        -ms-grid-row: 7;
+        -ms-grid-column: 1;
+    }
+    .page-index.page-archive .archive-entries .archive-entry:nth-child(11),
+    .page-index.page-archive .recent-entries .archive-entry:nth-child(11) {
+        -ms-grid-row: 7;
+        -ms-grid-column: 3;
+    }
+    .page-index.page-archive .archive-entries .archive-entry:nth-child(12),
+    .page-index.page-archive .recent-entries .archive-entry:nth-child(12) {
+        -ms-grid-row: 7;
+        -ms-grid-column: 5;
+    }
+    .page-index.page-archive .hatena-urllist {
+        -ms-grid-rows: auto 20px auto ;
+        -ms-grid-columns: 1fr 2vw 1fr 2vw 1fr ;
+    }
+    .page-index.page-archive .hatena-urllist div:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    .page-index.page-archive .hatena-urllist div:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+    .page-index.page-archive .hatena-urllist div:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 5;
+    }
+    .page-index.page-archive .hatena-urllist div:nth-child(4) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+    .page-index.page-archive .hatena-urllist div:nth-child(5) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+    .page-index.page-archive .hatena-urllist div:nth-child(6) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 5;
+    }
+    #bottom-editarea-inner {
+        -ms-grid-rows: auto 20px auto 20px auto 20px auto ;
+        -ms-grid-columns: 1fr 2vw 1fr 2vw 1fr ;
+    }
+    #bottom-editarea-inner div:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    #bottom-editarea-inner div:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+    #bottom-editarea-inner div:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 5;
+    }
+    #bottom-editarea-inner div:nth-child(4) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+    #bottom-editarea-inner div:nth-child(5) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+    #bottom-editarea-inner div:nth-child(6) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 5;
+    }
+    #bottom-editarea-inner div:nth-child(7) {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+    }
+    #bottom-editarea-inner div:nth-child(8) {
+        -ms-grid-row: 5;
+        -ms-grid-column: 3;
+    }
+    #bottom-editarea-inner div:nth-child(9) {
+        -ms-grid-row: 5;
+        -ms-grid-column: 5;
+    }
+    #bottom-editarea-inner div:nth-child(10) {
+        -ms-grid-row: 7;
+        -ms-grid-column: 1;
+    }
+    #bottom-editarea-inner div:nth-child(11) {
+        -ms-grid-row: 7;
+        -ms-grid-column: 3;
+    }
+    #bottom-editarea-inner div:nth-child(12) {
+        -ms-grid-row: 7;
+        -ms-grid-column: 5;
+    }
+}
+/*
+@media (min-width: 1195px){
+    .entry-title{
+        font-size: 30px;
+    }
+    .page-archive .entry-thumb{
+        width: 300px;
+        height: 169px;
+    }
+}
+*/
 /* Socials ボタン */
 .socials {
     display: -webkit-box;
@@ -2522,40 +2681,10 @@ body.offcanvas {
     background: black;
 }
 /* Web Font */
-/*
-@font-face {
-    font-family: "tokoteku";
-    src: url('https://ausnichts.github.io/tokoteku/tokoteku.eot'),
-    url('https://ausnichts.github.io/tokoteku/tokoteku.woff');
-}
-#title {
-    font-family: "tokoteku";
-}
-
-body{
-    background-image: url('https://cdn-ak.f.st-hatena.com/images/fotolife/a/ausnichts/20190731/20190731114851.jpg');
-}
-
-.pickup1 .pickup-link{
-//    background-image: url(https://cdn-ak.f.st-hatena.com/images/fotolife/a/ausnichts/20190801/20190801104803.jpg);
-//    background-image: url(https://cdn-ak.f.st-hatena.com/images/fotolife/a/ausnichts/20190815/20190815105741.jpg);
-    background-image: url(https://cdn-ak.f.st-hatena.com/images/fotolife/a/ausnichts/20190815/20190815140702.jpg);
-}
-.pickup2 .pickup-link{
-//    background-image: url(https://cdn-ak.f.st-hatena.com/images/fotolife/a/ausnichts/20190801/20190801111548.jpg);
-    background-image: url(https://cdn-ak.f.st-hatena.com/images/fotolife/a/ausnichts/20190815/20190815141956.jpg);
-}
-.pickup3 .pickup-link{
-//    background-image: url(https://cdn-ak.f.st-hatena.com/images/fotolife/a/ausnichts/20190803/20190803152806.jpg);
-//    background-image: url(https://cdn-ak.f.st-hatena.com/images/fotolife/a/ausnichts/20190815/20190815142749.jpg);
-    background-image: url(https://cdn-ak.f.st-hatena.com/images/fotolife/a/ausnichts/20190803/20190803152806.jpg);
-}
-
-.entry-footer-section{
-    display: none;
-}
-*/
 @font-face {
     font-family: 'chinmoku';
     src: url("https://ausnichts.github.io/eiga/chinmoku_logotype.otf") format("opentype"), url("https://ausnichts.github.io/eiga/chinmoku_logotype.woff") format("woff");
+}
+#title {
+    font-family: 'chinmoku';
 }
