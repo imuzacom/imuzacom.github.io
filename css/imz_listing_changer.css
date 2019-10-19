@@ -2655,11 +2655,3 @@ body.offcanvas {
 #formWrapper input[type="submit"]:hover {
     background: black;
 }
-/* Web Font */
-@font-face {
-    font-family: 'chinmoku';
-    src: url("https://ausnichts.github.io/eiga/chinmoku_logotype.otf") format("opentype"), url("https://ausnichts.github.io/eiga/chinmoku_logotype.woff") format("woff");
-}
-#title {
-    font-family: 'chinmoku';
-}
