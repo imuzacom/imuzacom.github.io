@@ -510,6 +510,7 @@ img.hatena-fotolife {
 }
 #title a:hover {
     color: #454545;
+    text-decoration: none;
 }
 /* ブログの説明不使用 */
 #blog-description {
