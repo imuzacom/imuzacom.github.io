@@ -342,9 +342,10 @@ body {
 }
 a {
     color: #1487bd;
+    text-decoration: none;
 }
 a:hover {
-    color: #0f668f;
+    text-decoration: underline;
 }
 h1, h2, h3, h4, h5, h6 {
     color: #333;
@@ -911,6 +912,7 @@ img.hatena-fotolife {
 .hatena-module-title a {
     color: #454545;
     text-decoration: none;
+    pointer-events: none;
 }
 .hatena-module-recent-entries .hatena-module-title::before,
 .hatena-module-entries-access-ranking .hatena-module-title::before {
@@ -968,6 +970,9 @@ body:not(.page-index) .urllist-title-link {
     color: #454545;
     text-decoration: none;
 }
+body:not(.page-index) .urllist-title-link:hover {
+    text-decoration: underline;
+}
 body:not(.page-index) .urllist-title-link p {
     margin-top: 0;
     margin-bottom: .3em;
@@ -1000,6 +1005,9 @@ body:not(.page-index) .urllist-entry-body {
 #bottom-editarea-inner a {
     color: #ffffff;
     text-decoration: none;
+}
+#bottom-editarea-inner a:hover {
+    text-decoration: underline;
 }
 #bottom-editarea-inner li {
     line-height: 2;
