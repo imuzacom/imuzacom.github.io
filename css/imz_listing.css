@@ -500,10 +500,10 @@ img.hatena-fotolife {
     background-image: url(https://cdn.blog.st-hatena.com/images/common/logo-icon.svg?version=c570949326e4e1ec6f258179bb9985ce829d4d0c&env=production);
     background-size: 100%;
     background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     position: absolute;
-    bottom: 6px;
+    bottom: 15px;
     margin: auto;
     left: 0;
     right: 0;
@@ -1467,13 +1467,8 @@ body:not(.page-index) .urllist-entry-body {
     margin-bottom: 2em;
 }
 /* プロファイルモジュール */
-.hatena-module-profile .profile-icon-link {
-    display: block;
-    max-width: 50%;
-}
 .hatena-module-profile .profile-icon {
     display: block;
-    width: 100%;
 }
 .hatena-module-profile .id {
     display: block;
@@ -1818,7 +1813,7 @@ body.offcanvas {
                 transform: scale(1);
     }
     .notouch .hatena-module-search-box .search-form {
-        min-width: 300px;
+        min-width: 250px;
     }
     .notouch #top-editarea-inner .imzMenu {
         position: relative;
@@ -2064,13 +2059,12 @@ body.offcanvas {
         font-size: inherit;
     }
     #title a {
-        margin-left: 70px;
+        margin-left: 50px;
     }
     #title a::before {
-        width: 60px;
-        height: 60px;
-        top: 0;
-        bottom: 10px;
+        width: 40px;
+        height: 40px;
+        bottom: -8px;
         right: inherit;
     }
     .search-module-input {
@@ -2525,124 +2519,6 @@ body.offcanvas {
     }
 }
 */
-/* Socials ボタン */
-.socials {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 100%;
-    margin-bottom: 30px;
-    max-width: 730px;
-    /* 予定テーマのコンテンツ最大幅 */
-}
-.socials a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 49%;
-    color: #fff;
-    text-decoration: none;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-bottom: 5px;
-}
-@media (min-width: 768px) {
-    .socials a {
-        width: 24.5%;
-        margin-bottom: 0;
-    }
-}
-.socials svg {
-    width: 33%;
-    vertical-align: bottom;
-}
-.socials .txt {
-    width: 67%;
-    font-size: 4.4vw;
-    text-align: center;
-}
-@media (min-width: 768px) {
-    .socials .txt {
-        font-size: 1.8vw;
-    }
-}
-.socials .hatebu {
-    background: #00a4de;
-}
-.socials .hatebu:hover {
-    background: #007eab;
-}
-.socials .hatebu:hover .cls-1 {
-    fill: #007eab;
-}
-.socials .hatebu .cls-1 {
-    fill: #00a4de;
-}
-.socials .hatebu .cls-2 {
-    fill: #fff;
-}
-.socials .hatebu .txt {
-    font-size: 4vw;
-}
-@media (min-width: 768px) {
-    .socials .hatebu .txt {
-        font-size: 1.4vw;
-    }
-}
-.socials .fb {
-    background: #4267b2;
-}
-.socials .fb:hover {
-    background: #34518d;
-}
-.socials .fb svg {
-    width: 20%;
-    margin: 0 auto;
-}
-.socials .fb svg .cls-1 {
-    fill: #fff;
-}
-.socials .tw {
-    background: #1da1f2;
-}
-.socials .tw:hover {
-    background: #0c85d0;
-}
-.socials .tw .cls-2 {
-    fill: #fff;
-}
-.socials .line {
-    background: #00C300;
-}
-.socials .line:hover {
-    background: #009000;
-}
-.socials .line:hover .fill_1 {
-    fill: #009000;
-}
-.socials .line .fill_1 {
-    fill: #00C300;
-}
-.socials .line .fill_2 {
-    fill: #fff;
-}
-.socials .line .txt {
-    font-size: 4vw;
-}
-@media (min-width: 768px) {
-    .socials .line .txt {
-        font-size: 1.6vw;
-    }
-}
 /* お問い合わせフォーム */
 #formWrapper * {
     display: block;
