@@ -350,7 +350,7 @@ function featured_images(){
 		<input type="text" name="site_image"></input>
 	</label><br><br>
 	<input type="hidden" name="token" value="<?php echo $token;?>">
-	<input type="submit" value="Upload"></input>
+	<input type="submit" value="Submit"></input>
 </form>
 <?php
 	$hatenablog_path = plugin_dir_path(__FILE__) . 'hatenablog.txt';
