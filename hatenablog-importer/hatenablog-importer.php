@@ -277,7 +277,7 @@ function format_document(){
 			'/<\/h4>/', 
 			'/<h5 /', 
 			'/<\/h5>/', 
-			'/<a .*href="http:\/\/d\.hatena\.ne\.jp\/keyword\/.+?".*?>(.+)?<\/a>/', 
+			'/<a(?: class="keyword" | )href="http:\/\/d\.hatena\.ne\.jp\/keyword\/.+?".*?>(.+?)<\/a>/', 
 			'/<iframe.+?youtube\.com\/embed\/(.+)?\?.+?<\/iframe>/'
 			);
 		$replace = array (
